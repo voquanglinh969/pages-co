@@ -1,0 +1,12 @@
+{
+    "footer": [
+        {
+            "label": "About Us",
+            "path": "/about"
+        },
+        {
+            "label": "Contact",
+            "path": "/contact"
+        }
+    ]
+}

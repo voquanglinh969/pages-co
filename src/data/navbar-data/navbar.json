@@ -1,0 +1,26 @@
+[
+  {
+    "label": "Home",
+    "path": "/"
+  },
+  {
+    "label": "Shop All",
+    "path": "/shop-all"
+  },
+  {
+    "label": "Fiction",
+    "path": "/fiction"
+  },
+  {
+    "label": "Mystery",
+    "path": "/mystery"
+  },
+  {
+    "label": "Children",
+    "path": "/children"
+  },
+  {
+    "label": "Poetry",
+    "path": "/poetry"
+  }
+]
