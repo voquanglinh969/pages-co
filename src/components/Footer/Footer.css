@@ -1,0 +1,143 @@
+.footer {
+  background: #2c241f;
+  color: #f5efe4;
+  margin-top: 80px;
+}
+
+.footer__container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+
+  gap: 48px;
+
+  padding: 64px 24px;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__logo span {
+  width: 28px;
+  height: 28px;
+
+  border-radius: 50%;
+
+  background: #d4a02f;
+  color: #2c241f;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 700;
+}
+
+.footer__logo h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.footer__brand p {
+  color: #b7aea3;
+  line-height: 1.7;
+  margin: 20px 0;
+  max-width: 260px;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__socials a {
+  width: 32px;
+  height: 32px;
+
+  border: 1px solid #4a413b;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #f5efe4;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__links h4,
+.footer__newsletter h4 {
+  color: #d4a02f;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.footer__links a {
+  color: #d9d2ca;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer__newsletter p {
+  color: #b7aea3;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.footer__newsletter form {
+  display: flex;
+}
+
+.footer__newsletter input {
+  flex: 1;
+  height: 42px;
+
+  background: transparent;
+  border: 1px solid #4a413b;
+
+  color: white;
+
+  padding: 0 12px;
+  border-radius: 6px 0 0 6px;
+}
+
+.footer__newsletter button {
+  height: 42px;
+  padding: 0 18px;
+
+  border: none;
+  cursor: pointer;
+
+  background: #d4a02f;
+  color: #2c241f;
+  font-weight: 600;
+
+  border-radius: 0 6px 6px 0;
+}
+
+.footer__bottom {
+  border-top: 1px solid #3c332d;
+
+  padding: 20px 24px;
+
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: #9c9286;
+  font-size: 13px;
+}

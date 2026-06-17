@@ -1,6 +1,6 @@
 import { FiArrowRight } from "react-icons/fi";
 
-export default function FeatureCard({ title, desc, children }) {
+export default function FeatureSection({ title, desc, children }) {
   return (
     <article className="feature feature--featured">
       <div className="feature__header">

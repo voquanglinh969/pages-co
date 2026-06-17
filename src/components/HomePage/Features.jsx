@@ -1,5 +1,5 @@
 import { BookCard } from "../Shared/BookCard";
-import FeatureCard from "./FeatureCard";
+import FeatureSection from "./FeatureSection";
 import Promotion from "./Promotion";
 import books from "../../data/api-data/books.json";
 import { TopicCard } from "../Shared/TopicCard";
@@ -15,7 +15,7 @@ export default function Features() {
   return (
     <div className="features">
       <div className="features__grid">
-        <FeatureCard title="Find your Shelf" desc="Browse by Genre">
+        <FeatureSection title="Find your Shelf" desc="Browse by Genre">
           <div className="feature__book feature__book--topics">
             {topics.map((item) => (
               <TopicCard
@@ -28,9 +28,9 @@ export default function Features() {
               />
             ))}
           </div>
-        </FeatureCard>
+        </FeatureSection>
 
-        <FeatureCard title="Editor's Picks" desc="Featured this month">
+        <FeatureSection title="Editor's Picks" desc="Featured this month">
           <div className="feature__book">
             {editorsPicks.slice(0, 4).map((item) => (
               <BookCard
@@ -47,9 +47,13 @@ export default function Features() {
               />
             ))}
           </div>
-        </FeatureCard>
+        </FeatureSection>
 
-        <FeatureCard title="Most Loved" desc="Best Sellers">
+        <section className="section">
+          <Promotion />
+        </section>
+
+        <FeatureSection title="Most Loved" desc="Best Sellers">
           <div className="feature__book">
             {mostLoved.slice(0, 6).map((item) => (
               <BookCard
@@ -68,13 +72,9 @@ export default function Features() {
               />
             ))}
           </div>
-        </FeatureCard>
+        </FeatureSection>
 
-        <section className="section">
-          <Promotion />
-        </section>
-
-        <FeatureCard title="Hot Off The Press" desc="New Arrivals">
+        <FeatureSection title="Hot Off The Press" desc="New Arrivals">
           <div className="feature__book">
             {hotOffThePress.slice(0, 4).map((item) => (
               <BookCard
@@ -91,26 +91,7 @@ export default function Features() {
               />
             ))}
           </div>
-        </FeatureCard>
-
-        <FeatureCard
-          title="Featured this month"
-          desc="Hand-picked books across genres by our editorial team."
-        >
-          <div className="feature__book">
-            <BookCard
-              item={{
-                title: "A House of Borrowed Light",
-                author: "Sofia Marchetti",
-                price: "$17.25",
-                pricebefore: "$22.00",
-                rating: "4.5",
-                tag: "BESTSELLER",
-                color: "#7C67A0",
-              }}
-            />
-          </div>
-        </FeatureCard>
+        </FeatureSection>
       </div>
     </div>
   );
