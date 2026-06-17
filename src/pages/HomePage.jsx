@@ -10,8 +10,6 @@ export default function HomePage() {
 
       <section className="features section">
         <div className="container">
-          <div className="section__eyebrow">Why Pages & Co.</div>
-          <h2 className="section__title">What we offer</h2>
           <Features />
         </div>
       </section>

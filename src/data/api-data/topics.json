@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Fiction",
+    "count": 150,
+    "color": "#2D5A46"
+  },
+  {
+    "id": 2,
+    "title": "Non-Fiction",
+    "count": 120,
+    "color": "#647CAD"
+  },
+  {
+    "id": 3,
+    "title": "Science Fiction",
+    "count": 80,
+    "color": "#5B9296"
+  },
+  {
+    "id": 4,
+    "title": "Fiction",
+    "count": 150,
+    "color": "#D18AA8"
+  },
+  {
+    "id": 5,
+    "title": "Non-Fiction",
+    "count": 120,
+    "color": "#D8B25E"
+  },
+  {
+    "id": 6,
+    "title": "Science Fiction",
+    "count": 80,
+    "color": "#A34E3A"
+  }
+]

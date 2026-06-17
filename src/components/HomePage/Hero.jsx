@@ -7,10 +7,10 @@ export default function Hero() {
       collection: "staff favorites",
       title: "The shelves we keep coming back to",
       desc: "Our booksellers pick the titles they can't stop pressing into customer's hands.",
-      color: "#9A5A47",
+      color: "#5B8A6D",
     },
     {
-      id: 2,
+      id: 2,    
       collection: "staff favorites",
       title: "Mystery",
       desc: "Unravel thrilling mysteries and secrets.",
