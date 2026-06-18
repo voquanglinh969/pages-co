@@ -208,3 +208,22 @@
   }
 
 }
+
+@media (max-width: 1024px) {
+  .book-detail__hero {
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 22px;
+  }
+
+  .book-detail__cover {
+    min-height: 360px;
+  }
+
+  .book-detail__title {
+    font-size: clamp(30px, 4vw, 44px);
+  }
+
+  .book-detail__specs {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

@@ -93,3 +93,13 @@ body {
     padding-inline: 16px;
   }
 }
+
+@media (max-width: 1024px) {
+  .section {
+    padding-block: 20px;
+  }
+
+  .section__title {
+    font-size: clamp(24px, 3.4vw, 36px);
+  }
+}

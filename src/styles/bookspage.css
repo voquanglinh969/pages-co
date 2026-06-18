@@ -141,3 +141,17 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 1024px) {
+  .books-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .catalog-filter {
+    flex-wrap: wrap;
+  }
+
+  .catalog-filter__tabs {
+    max-width: 100%;
+  }
+}
