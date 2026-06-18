@@ -5,8 +5,8 @@ export default function FeatureSection({ title, desc, children }) {
     <article className="feature feature--featured">
       <div className="feature__header">
         <div>
-          <div className="section__eyebrow">{title}</div>
-          <h2 className="section__title">{desc}</h2>
+          <div className="feature__eyebrow">{title}</div>
+          <h2 className="feature__title">{desc}</h2>
         </div>
         <a href="/" className="feature__view-all">
           <p>View all</p>

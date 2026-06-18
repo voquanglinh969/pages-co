@@ -1,5 +1,6 @@
 import navbarItems from "../../data/navbar-data/navbar.json";
 import "../../styles/navbar.css";
+import { NavLink } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
 import LoginModal from "./LoginModal";
 export default function Navbar() {
@@ -16,9 +17,15 @@ export default function Navbar() {
             <ul className="navbar__menu">
               {navbarItems.map((item) => (
                 <li key={item.id} className="navbar__item">
-                  <a href={item.path} className="navbar__link">
+                  <NavLink
+                    to={item.path}
+                    className={({ isActive }) =>
+                      `navbar__link ${isActive ? "is-active" : ""}`
+                    }
+                    end={item.path === "/"}
+                  >
                     {item.label}
-                  </a>
+                  </NavLink>
                 </li>
               ))}
             </ul>

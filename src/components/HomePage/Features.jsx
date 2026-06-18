@@ -32,7 +32,7 @@ export default function Features() {
 
         <FeatureSection title="Editor's Picks" desc="Featured this month">
           <div className="feature__book">
-            {editorsPicks.slice(0, 4).map((item) => (
+            {editorsPicks.slice(0, 5).map((item) => (
               <BookCard
                 key={item.id}
                 item={{
@@ -42,7 +42,7 @@ export default function Features() {
                   pricebefore: item.pricebefore,
                   rating: item.rating,
                   tag: item.tag,
-                  color: item.color,
+                  color: item.coverColor,
                 }}
               />
             ))}
@@ -55,7 +55,7 @@ export default function Features() {
 
         <FeatureSection title="Most Loved" desc="Best Sellers">
           <div className="feature__book">
-            {mostLoved.slice(0, 6).map((item) => (
+            {mostLoved.slice(0, 5).map((item) => (
               <BookCard
                 key={item.id}
                 item={{
@@ -65,7 +65,7 @@ export default function Features() {
                   pricebefore: item.pricebefore,
                   rating: item.rating,
                   tag: item.tag,
-                  color: item.color,
+                  color: item.coverColor,
                   new: item.new,
                   bestSeller: item.bestSeller,
                 }}
@@ -76,7 +76,7 @@ export default function Features() {
 
         <FeatureSection title="Hot Off The Press" desc="New Arrivals">
           <div className="feature__book">
-            {hotOffThePress.slice(0, 4).map((item) => (
+            {hotOffThePress.slice(0, 5).map((item) => (
               <BookCard
                 key={item.id}
                 item={{
@@ -86,7 +86,7 @@ export default function Features() {
                   pricebefore: item.pricebefore,
                   rating: item.rating,
                   tag: item.tag,
-                  color: item.color,
+                  color: item.coverColor,
                 }}
               />
             ))}

@@ -199,7 +199,7 @@
 
 .feature__header {
   display: flex;
-  align-items: flex-end;
+  align-items: end;
   justify-content: space-between;
   gap: 16px;
 }
@@ -228,17 +228,19 @@
 
 .feature__book {
   margin-top: 20px;
-  width: fit-content;
+  width: 100%;
   display: flex;
   gap: 16px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  align-items: stretch;
 }
 
 .feature__book--topics {
   width: 100%;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  scroll-behavior: smooth;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 16px;
+  overflow: hidden;
   padding-bottom: 4px;
 }
 
@@ -247,8 +249,8 @@
 }
 
 .feature__book--topics .topic-card__container {
-  width: 150px;
-  flex: 0 0 auto;
+  width: 100%;
+  min-width: 0;
 }
 
 .feature__badge {
@@ -266,7 +268,8 @@
 }
 
 .book-card__container {
-  width: 180px;
+  width: calc((100% - 64px) / 5);
+  min-width: 0;
   flex: 0 0 auto;
   background: var(--color-surface);
   padding: 8px;
@@ -451,16 +454,17 @@
   font-size: 12px;
 }
 
-.feature__title {
-  margin: 0 0 8px;
-  font-size: 16px;
-  color: var(--color-black);
+.feature__eyebrow {
+  color: var(--color-primary);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-.feature__desc {
-  margin: 0;
-  color: var(--color-text-muted);
-  font-size: 14px;
+.feature__title {
+  margin: 0 0 8px;
+  font-size: 24px;
+  color: var(--color-black);
 }
 
 .topic-card__container {
@@ -469,7 +473,7 @@
 
 .topic-card__content {
   width: 100%;
-  min-height: 86px;
+  min-height: 100px;
   padding: 14px 12px;
   border-radius: 4px;
   display: flex;
@@ -502,6 +506,28 @@
   .feature__header {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .feature__book {
+    overflow-x: auto;
+    padding-bottom: 4px;
+  }
+
+  .book-card__container {
+    width: 180px;
+    flex: 0 0 auto;
+  }
+
+  .topic-card__container,
+  .feature__book--topics .topic-card__container {
+    width: 150px;
+    flex: 0 0 auto;
+  }
+
+  .feature__book--topics {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
   }
 }
 

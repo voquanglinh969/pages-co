@@ -8,7 +8,7 @@ export default function HomePage() {
         <Hero />
       </section>
 
-      <section className="features section">
+      <section className="features">
         <div className="container">
           <Features />
         </div>
