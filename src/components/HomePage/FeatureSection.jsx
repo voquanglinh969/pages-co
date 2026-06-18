@@ -8,7 +8,7 @@ export default function FeatureSection({ title, desc, children }) {
           <div className="feature__eyebrow">{title}</div>
           <h2 className="feature__title">{desc}</h2>
         </div>
-        <a href="/" className="feature__view-all">
+        <a href="/books" className="feature__view-all">
           <p>View all</p>
           <FiArrowRight size={20} />
         </a>

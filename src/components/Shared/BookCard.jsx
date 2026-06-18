@@ -4,9 +4,10 @@ export const BookCard = ({ item }) => {
   const tagClassName = item.tag
     ? `book-card__tag book-card__tag--${item.tag.toLowerCase().replace(/\s+/g, "-")}`
     : "";
+  const href = item.slug ? `/books/${item.slug}` : "/books";
 
   return (
-    <div className="book-card__container">
+    <a href={href} className="book-card__container book-card__link">
       <div className="book-card__content">
         <div
           className="book-card__image"
@@ -37,6 +38,6 @@ export const BookCard = ({ item }) => {
           </div>
         </div>
       </div>
-    </div>
+    </a>
   );
 };

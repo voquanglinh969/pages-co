@@ -5,22 +5,22 @@
   },
   {
     "label": "Shop All",
-    "path": "/shop-all"
+    "path": "/books"
   },
   {
     "label": "Fiction",
-    "path": "/fiction"
+    "path": "/books"
   },
   {
     "label": "Mystery",
-    "path": "/mystery"
+    "path": "/books"
   },
   {
     "label": "Children",
-    "path": "/children"
+    "path": "/books"
   },
   {
     "label": "Poetry",
-    "path": "/poetry"
+    "path": "/books"
   }
 ]

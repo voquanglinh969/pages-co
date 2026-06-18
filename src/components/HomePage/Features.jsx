@@ -36,12 +36,13 @@ export default function Features() {
               <BookCard
                 key={item.id}
                 item={{
+                  slug: item.slug,
                   title: item.title,
                   author: item.author,
                   price: item.price,
                   pricebefore: item.pricebefore,
                   rating: item.rating,
-                  tag: item.tag,
+                  tag: item.bestSeller ? "BESTSELLER" : item.new ? "NEW" : "",
                   color: item.coverColor,
                 }}
               />
@@ -59,12 +60,13 @@ export default function Features() {
               <BookCard
                 key={item.id}
                 item={{
+                  slug: item.slug,
                   title: item.title,
                   author: item.author,
                   price: item.price,
                   pricebefore: item.pricebefore,
                   rating: item.rating,
-                  tag: item.tag,
+                  tag: item.bestSeller ? "BESTSELLER" : item.new ? "NEW" : "",
                   color: item.coverColor,
                   new: item.new,
                   bestSeller: item.bestSeller,
@@ -80,12 +82,13 @@ export default function Features() {
               <BookCard
                 key={item.id}
                 item={{
+                  slug: item.slug,
                   title: item.title,
                   author: item.author,
                   price: item.price,
                   pricebefore: item.pricebefore,
                   rating: item.rating,
-                  tag: item.tag,
+                  tag: item.bestSeller ? "BESTSELLER" : item.new ? "NEW" : "",
                   color: item.coverColor,
                 }}
               />

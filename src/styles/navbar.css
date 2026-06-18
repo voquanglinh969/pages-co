@@ -107,14 +107,6 @@
   transform: scaleX(1);
 }
 
-.navbar__link.is-active {
-  color: var(--color-primary);
-}
-
-.navbar__link.is-active::after {
-  transform: scaleX(1);
-}
-
 .navbar__actions {
   flex-shrink: 0;
 
